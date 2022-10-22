@@ -1,26 +1,70 @@
-document.getElementById("sideBarOpen").addEventListener("click",function(){
-    let topBar=document.getElementById("topBar");
-    let sideBar=document.getElementById("sideBar");
-    sideBar.style.display="block";
-    topBar.style.display="none";
-    document.getElementById("content").style.width="80vw";
-    document.getElementById("aboutMe_").style.width="80vw";
-    document.getElementById("skills_").style.width="80vw";
-});
-document.getElementById("sideBarCross").addEventListener("click",function(){
-    let topBar=document.getElementById("topBar");
-    let sideBar=document.getElementById("sideBar");
-    sideBar.style.display="none";
-    topBar.style.display="flex";
-    document.getElementById("content").style.display="block";
-    document.getElementById("aboutMe_").style.display="none";
-    document.getElementById("skills_").style.display="none";
-    document.getElementById("content").style.width="100vw";
-    document.getElementById("aboutMe_").style.width="100vw";
-    document.getElementById("skills_").style.width="100vw";
-    document.getElementById("projects_").style.display="none";
+// document.getElementById("sideBarOpen").addEventListener("click",function(){
+//     let topBar=document.getElementById("topBar");
+//     let sideBar=document.getElementById("sideBar");
+//     sideBar.style.display="block";
+//     topBar.style.display="none";
+//     document.getElementById("content").style.width="80vw";
+//     document.getElementById("aboutMe_").style.width="80vw";
+//     document.getElementById("skills_").style.width="80vw";
+// });
+// document.getElementById("sideBarCross").addEventListener("click",function(){
+//     let topBar=document.getElementById("topBar");
+//     let sideBar=document.getElementById("sideBar");
+//     sideBar.style.display="none";
+//     topBar.style.display="flex";
+//     // document.getElementById("content").style.display="block";
+//     // document.getElementById("aboutMe_").style.display="none";
+//     // document.getElementById("skills_").style.display="none";
+//     document.getElementById("content").style.width="100vw";
+//     document.getElementById("aboutMe_").style.width="100vw";
+//     document.getElementById("skills_").style.width="100vw";
+//     // document.getElementById("projects_").style.width="100vw";
     
-});
+//     // document.getElementById("projects_").style.display="none";
+    
+// });
+document.getElementById("darkmode").addEventListener("click",function(){
+    let mode=document.getElementById("darkmode");
+    let sideBar=document.getElementById("sideBar");
+    let content=document.getElementById("mainContent");
+    let query=document.querySelector("body");
+    let one=document.getElementById("one");
+    let java1=document.getElementById("javadark1");
+    let java=document.getElementById("javadark");
+    let topbarimg=document.getElementsByClassName("topbarimg");
+    if(mode.innerHTML=="Switch to Dark"){
+        mode.innerHTML="Switch to Light";
+        mode.style.color="black";
+        mode.style.backgroundColor="white";
+        sideBar.style.color="rgb(199, 199, 199)";
+        sideBar.style.backgroundColor="#d15618";
+        query.style.backgroundColor="black";
+        query.style.color="white";
+        content.style.backgroundColor="black";
+        content.style.color="white";
+        one.style.backgroundColor="black";
+        one.style.color="white";
+        java.src="img/javadark.png";
+        java.style.backgroundColor="white";
+        java1.src="img/javadark.png";
+        java1.style.backgroundColor="white";
+        topbarimg.style.color="white";
+    }else{
+        mode.innerHTML="Switch to Dark";
+        mode.style.color="white";
+        mode.style.backgroundColor="black";
+        sideBar.style.color="black";
+        sideBar.style.backgroundColor="rgb(199, 199, 199)";
+        query.style.color="black";
+        query.style.backgroundColor="white";
+        content.style.backgroundColor="white";
+        content.style.color="black";
+        one.style.backgroundColor="white";
+        one.style.color="black";
+        java.src="img/java.png";
+        java1.src="img/java.png";
+    }
+})
 function goToGit(){
     window.open("https://github.com/sumitpanchal08","_blank");
 }
@@ -56,6 +100,7 @@ function showProjects(){
     document.getElementById("content").style.display="none";
     document.getElementById("aboutMe_").style.display="none";
     document.getElementById("projects_").style.display="block";
+    document.getElementById("projects_").style.width="80vw";
 }
 function goToResume(){
     window.open("https://drive.google.com/file/d/1uXhdN0aRukVBCJm5lKZ0P1xO6aOLm_Ob/view?usp=sharing","_blank");

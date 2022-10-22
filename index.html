@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h2 id="darkmode">Switch to Dark</h2>
     <div id="topBar">
         <div>
             <img src="img/ham.png" alt="" id="sideBarOpen">
         </div>
         <h1>Welcome to My Profile</h1>
-        <ul>
-            <li onclick="goToGit()"><img src="img/git.png" alt="" ></li>
-            <li onclick="goToIn()"><img src="img/linkedin.png" alt="" ></li>
+        <ul class="topbarimg">
+            <li onclick="goToGit()"><img src="img/git.png" class="topbarimg" alt="" ></li>
+            <li onclick="goToIn()"><img src="img/linkedin.png" class="topbarimg" alt="" ></li>
         </ul>
     </div>
     <div id="container">
         <div id="sideBar">
-            <h2>SUMIT</h2>
+            <h2>Welcome</h2>
             <img src="img/cross.png" alt="" id="sideBarCross">
             <ul>
                 <li onclick="showHome()">HOME</li>
@@ -29,9 +30,12 @@
                 <li onclick="showProjects()">PROJECTS</li>
                 <li onclick="goToResume()">RESUME</li>
             </ul>
+            <div><img onclick="goToGit()" src="img/git.png" alt="" >
+            <img onclick="goToIn()" src="img/linkedin.png" alt="" ></div>
+            
         </div>
         <div id="content">
-            <div>
+            <div id="one">
                 <div id="mainContent">
                     <p>Hello, my name is</p>
                 <h1>Sumit Panchal</h1>
@@ -85,7 +89,7 @@
             <div>
                 <div>
 
-                    <img src="img/java.png" alt="">
+                    <img src="img/java.png" id="javadark" alt="">
                 </div>
                 <h2>Java</h2>
             </div>
@@ -162,7 +166,7 @@
             <div>
                 <div>
 
-                    <img src="img/java.png" alt="">
+                    <img src="img/java.png" id="javadark1" alt="">
                 </div>
                 <h2>Java</h2>
             </div>
