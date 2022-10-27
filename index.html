@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,17 @@
     <title>Sumit Panchal - Aspiring Java Backend Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h2 id="darkmode">Switch to Dark</h2>
+    <div id="darkmode"><img id="darkmodeimg" src="img/moon.png" alt=""></div>
     <div id="topBar">
         <div>
             <img src="img/ham.png" alt="" id="sideBarOpen">
         </div>
         <h1>Welcome to My Profile</h1>
         <ul class="topbarimg">
-            <li onclick="goToGit()"><img src="img/git.png" class="topbarimg" alt="" ></li>
-            <li onclick="goToIn()"><img src="img/linkedin.png" class="topbarimg" alt="" ></li>
+            <li onclick="goToGit()"><img src="img/git.png" class="topbarimg" alt=""></li>
+            <li onclick="goToIn()"><img src="img/linkedin.png" class="topbarimg" alt=""></li>
         </ul>
     </div>
     <div id="container">
@@ -30,17 +32,18 @@
                 <li onclick="showProjects()">PROJECTS</li>
                 <li onclick="goToResume()">RESUME</li>
             </ul>
-            <div><img onclick="goToGit()" src="img/git.png" alt="" >
-            <img onclick="goToIn()" src="img/linkedin.png" alt="" ></div>
-            
+            <div><img onclick="goToGit()" src="img/git.png" alt="">
+                <img onclick="goToIn()" src="img/linkedin.png" alt="">
+            </div>
+
         </div>
         <div id="content">
             <div id="one">
                 <div id="mainContent">
                     <p>Hello, my name is</p>
-                <h1>Sumit Panchal</h1>
-                <p>I'm a <span>Java Backend Developer</span></p>
-                <button onclick="goToResume()" id="mainBut">Resume</button>
+                    <h1>Sumit Panchal</h1>
+                    <p>I'm a <span>Java Backend Developer</span></p>
+                    <button onclick="goToResume()" id="mainBut">Resume</button>
                 </div>
                 <div id="profilePic">
                     <img src="img/resume.png" alt="">
@@ -64,81 +67,144 @@
         </div>
         <div id="skills_">
             <h1>Skills</h1>
-        <div>
             <div>
                 <div>
-
-                    <img src="img/html.png" alt="">
+                    <div>
+                        <img src="img/html.png" alt="">
+                    </div>
+                    <h2>HTML</h2>
                 </div>
-                <h2>HTML</h2>
-            </div>
-            <div>
                 <div>
+                    <div>
 
-                    <img src="img/css.png" alt="">
+                        <img src="img/css.png" alt="">
+                    </div>
+                    <h2>CSS</h2>
                 </div>
-                <h2>CSS</h2>
-            </div>
-            <div>
                 <div>
+                    <div>
 
-                    <img src="img/js.png" alt="">
+                        <img src="img/js.png" alt="">
+                    </div>
+                    <h2>JavaScript</h2>
                 </div>
-                <h2>JavaScript</h2>
-            </div>
-            <div>
                 <div>
+                    <div>
 
-                    <img src="img/java.png" id="javadark" alt="">
+                        <img src="img/java.png" id="javadark" alt="">
+                    </div>
+                    <h2>Java</h2>
                 </div>
-                <h2>Java</h2>
-            </div>
-            <div>
                 <div>
+                    <div>
 
-                    <img src="img/spring.png" alt="">
+                        <img src="img/spring.png" alt="">
+                    </div>
+                    <h2>Spring Boot</h2>
                 </div>
-                <h2>Spring Boot</h2>
             </div>
-        </div>
         </div>
         <div id="projects_">
             <h1>Projects</h1>
             <div>
                 <div>
-                    <img src="img/rento.png" alt="">
                     <div>
-                        <h2>Rentomojo Website-Clone</h2>
-                    <p>RentoMojo is a top-rated Indian rental brand, with an established presence across several major cities, including the capital: Delhi! When you purchase furniture, appliances, and electronics from a store, you spend a great deal of money. You can rent the same furniture, appliance, or electronics item from us for a fraction of the retail price.</p>
-                        <p>View on <a target="_blank" href="https://github.com/sumitpanchal08/befitting-harbor-9010">GitHub</a> or on <a target="_blank" href="https://timely-gumdrop-6783b4.netlify.app/">Deployed Link</a>.</p>
+                        <a href="https://github.com/sumitpanchal08/befitting-harbor-9010" target="_blank" rel="noopener noreferrer">
+                           <div>
+                            <img class="showhov" src="img/git.png" alt="">
+                            <div class="hidehov">GitHub</div>
+                        </div> 
+                        </a>
+                        <a href="https://www.linkedin.com/posts/sumitpanchal08_clonewebsite-advancedjavascript-activity-6969629554998960128-iuZ0?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+
+                            <div>
+                                <img class="showhov" src="img/video.png" alt="">
+                                <div class="hidehov">Video</div>
+                            </div>
+                        </a>
+                        <a href="https://timely-gumdrop-6783b4.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <div>
+                            <img class="showhov" src="img/live.png" alt="">
+                            <div class="hidehov">Live</div>
+                        </div>
+                        </a>
+                        
                     </div>
+                    <div>
+                        <div>
+                            <img src="img/rento.png" alt="">
+                        </div>
+                        <h2>Rentomojo Website-Clone</h2>
+                        <p>RentoMojo is a Ecommerce website where you rent/purchase furniture, appliances, and electronics.</p>
+                        <h2>Tech stack</h2>
+                                <div id="techstack_">
+                                    <div>
+                                        <img src="img/html.png" alt="">
+                                    </div>
+                                    <div>
+                                         <img src="img/css.png" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="img/js.png" alt="">
+                                    </div>
+                                </div>
+
+                     </div>
                     
+
                 </div>
                 <div>
-                    <img src="img/buffer.jpg" alt="">
                     <div>
+                        <a href="https://github.com/sumitpanchal08/scenic-wood-5639" target="_blank" rel="noopener noreferrer">
+                            <div>
+                                <img class="showhov" src="img/git.png" alt="">
+                                <div class="hidehov">GitHub</div>
+                            </div>
+                        </a>
+                            <a href="https://www.linkedin.com/posts/sumitpanchal08_html-css-javascript-activity-6957552163061444608-_hsR?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                                <div>
+                                <img class="showhov" src="img/video.png" alt="">
+                                <div class="hidehov">Video</div>
+                            </div>
+                            </a>
+                            <a href="https://verdant-buttercream-9ee148.netlify.app/" target="_blank" rel="noopener noreferrer">
+
+                                <div>
+                                    <img class="showhov" src="img/live.png" alt="">
+                                    <div class="hidehov">Live</div>
+                                </div>
+                            </a>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <img src="img/buffer.png" alt="">
+                        </div>
                         <h2>Buffer Website-Clone</h2>
-                        <p>This is a Social Media Handling or Bussiness Supporting website. Where you can go and grow your small businesses.</p>
-                        <p>View on <a target="_blank" href="https://github.com/sumitpanchal08/scenic-wood-5639">GitHub</a> or on <a target="_blank" href="https://verdant-buttercream-9ee148.netlify.app/">Deployed Link</a>.</p>
+                        <p>This is a Social Media Handling or Bussiness Supporting website. Where you can go and grow
+                            your small businesses.</p>
+                        <!-- <p>View on <a target="_blank"
+                                href="https://github.com/sumitpanchal08/scenic-wood-5639">GitHub</a> or on <a
+                                target="_blank" href="https://verdant-buttercream-9ee148.netlify.app/">Deployed
+                                Link</a>.</p> -->
+                                <h2>Tech stack</h2>
+                                <div id="techstack_">
+                                    <div>
+                                        <img src="img/html.png" alt="">
+                                    </div>
+                                    <div>
+                                         <img src="img/css.png" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="img/js.png" alt="">
+                                    </div>
+                                </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="aboutMe">
-        <h1>All <span>About me</span></h1>
-        <ul>
-            <li>Hello my name is Sumit Panchal & I am very fond of
-                Coding and Problem Solving. I did Full stack web
-                Development skill building Course at Masai School, Banglore
-            </li>
-            <li>Aspiring Java Backend developer and quick
-                learner who possesses the ability to adapt
-                with new environments quickly. Looking for
-                a challenging role in industry to utilize my
-                skills and learn.</li>
-        </ul>
-    </div>
+    
     <div id="skills">
         <h1>Skills</h1>
         <div>
@@ -183,24 +249,117 @@
         <h1>Projects</h1>
         <div>
             <div>
-                <img src="img/rento.png" alt="">
                 <div>
-                    <h2>Rentomojo Website-Clone</h2>
-                <p>RentoMojo is a top-rated Indian rental brand, with an established presence across several major cities, including the capital: Delhi! When you purchase furniture, appliances, and electronics.</p>
-                    <p>View on <a target="_blank" href="https://github.com/sumitpanchal08/befitting-harbor-9010">GitHub</a> or on <a target="_blank" href="https://timely-gumdrop-6783b4.netlify.app/">Deployed Link</a>.</p>
+                    <a href="https://github.com/sumitpanchal08/befitting-harbor-9010" target="_blank" rel="noopener noreferrer">
+                       <div>
+                        <img class="showhov" src="img/git.png" alt="">
+                        <div class="hidehov">GitHub</div>
+                    </div> 
+                    </a>
+                    <a href="https://www.linkedin.com/posts/sumitpanchal08_clonewebsite-advancedjavascript-activity-6969629554998960128-iuZ0?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+
+                        <div>
+                            <img class="showhov" src="img/video.png" alt="">
+                            <div class="hidehov">Video</div>
+                        </div>
+                    </a>
+                    <a href="https://timely-gumdrop-6783b4.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <div>
+                        <img class="showhov" src="img/live.png" alt="">
+                        <div class="hidehov">Live</div>
+                    </div>
+                    </a>
+                    
                 </div>
+                <div>
+                    <div>
+                        <img src="img/rento.png" alt="">
+                    </div>
+                    <h2>Rentomojo Website-Clone</h2>
+                    <p>RentoMojo is a Ecommerce website where you rent/purchase furniture, appliances, and electronics.</p>
+                    <h2>Tech stack</h2>
+                            <div id="techstack">
+                                <div>
+                                    <img src="img/html.png" alt="">
+                                </div>
+                                <div>
+                                     <img src="img/css.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/js.png" alt="">
+                                </div>
+                            </div>
+
+                 </div>
                 
+
             </div>
             <div>
-                <img src="img/buffer.jpg" alt="">
                 <div>
+                    <a href="https://github.com/sumitpanchal08/scenic-wood-5639" target="_blank" rel="noopener noreferrer">
+                        <div>
+                            <img class="showhov" src="img/git.png" alt="">
+                            <div class="hidehov">GitHub</div>
+                        </div>
+                    </a>
+                        <a href="https://www.linkedin.com/posts/sumitpanchal08_html-css-javascript-activity-6957552163061444608-_hsR?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                            <div>
+                            <img class="showhov" src="img/video.png" alt="">
+                            <div class="hidehov">Video</div>
+                        </div>
+                        </a>
+                        <a href="https://verdant-buttercream-9ee148.netlify.app/" target="_blank" rel="noopener noreferrer">
+
+                            <div>
+                                <img class="showhov" src="img/live.png" alt="">
+                                <div class="hidehov">Live</div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div>
+                    <div>
+                        <img src="img/buffer.png" alt="">
+                    </div>
                     <h2>Buffer Website-Clone</h2>
-                    <p>This is a Social Media Handling or Bussiness Supporting website. Where you can go and grow your small businesses.</p>
-                    <p>View on <a target="_blank" href="https://github.com/sumitpanchal08/scenic-wood-5639">GitHub</a> or on <a target="_blank" href="https://verdant-buttercream-9ee148.netlify.app/">Deployed Link</a>.</p>
+                    <p>This is a Social Media Handling or Bussiness Supporting website. Where you can go and grow
+                        your small businesses.</p>
+                    <!-- <p>View on <a target="_blank"
+                            href="https://github.com/sumitpanchal08/scenic-wood-5639">GitHub</a> or on <a
+                            target="_blank" href="https://verdant-buttercream-9ee148.netlify.app/">Deployed
+                            Link</a>.</p> -->
+                            <h2>Tech stack</h2>
+                            <div id="techstack">
+                                <div>
+                                    <img src="img/html.png" alt="">
+                                </div>
+                                <div>
+                                     <img src="img/css.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/js.png" alt="">
+                                </div>
+                            </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+    <div id="aboutMe">
+        <h1>All <span>About me</span></h1>
+        <ul>
+            <li>Hello my name is Sumit Panchal & I am very fond of
+                Coding and Problem Solving. I did Full stack web
+                Development skill building Course at Masai School, Banglore
+            </li>
+            <li>Aspiring Java Backend developer and quick
+                learner who possesses the ability to adapt
+                with new environments quickly. Looking for
+                a challenging role in industry to utilize my
+                skills and learn.</li>
+        </ul>
+    </div>
 </body>
 <script src="index.js"></script>
+
 </html>
