@@ -899,7 +899,10 @@ font-family: 'Ubuntu', sans-serif; */
         font-family: 'Roboto', sans-serif;
         margin-top: 60px;
         font-size: .7rem;
-        margin-bottom: 3px;
+        /* margin-bottom: 3px; */
+        background-color: rgb(52, 52, 52);
+        padding: 20px 0px;
+        color: white;
     }
 
     /* #topBar>ul>li>img:hover{

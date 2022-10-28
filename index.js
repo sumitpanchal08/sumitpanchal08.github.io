@@ -117,3 +117,6 @@ function goToMail(){
 function goToResume(){
     window.open("https://drive.google.com/file/d/1uXhdN0aRukVBCJm5lKZ0P1xO6aOLm_Ob/view?usp=sharing","_blank");
 }
+function goToWhatsapp(){
+    window.open("https://wa.me/918168471581?text=Hello!%20Can%20you%20tell%20me%20more%20about%20you?");
+}
