@@ -70,6 +70,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 #sideBar {
     width: 15vw;
+    position: fixed;
     /* background-color: #d15618; */
     background-color: rgb(199, 199, 199);
     min-height: 100vh;
@@ -155,6 +156,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 #content {
     width: 85vw;
+    margin-left: 15vw;
     /* background-color: #2a2a2a; */
 }
 
@@ -227,7 +229,7 @@ font-family: 'Ubuntu', sans-serif; */
     /* margin-left: 10%; */
     background-color: #d15618;
     width: 70%;
-    transition: transform .5s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 #profilePic:hover {
@@ -236,8 +238,10 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 #profilePic>img:hover {
-    transition: transform 1.5s ease-in-out;
-    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+    transform: scale(1.05);
+    box-shadow:  rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;
+
 }
 
 #container {
@@ -249,32 +253,13 @@ font-family: 'Ubuntu', sans-serif; */
     font-family: 'Ubuntu', sans-serif;
 }
 
-#aboutMe>h1>span {
-    color: #d15618;
-}
-
-#aboutMe>h1 {
-    margin-top: 50px;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    font-size: 2.5rem;
-}
-
-#aboutMe>ul {
-    width: 50%;
-    margin: 50px auto;
-    font-size: 1.8rem;
-}
-
-#aboutMe>ul>li {
-    margin: 30px 0px;
-}
-
 /* ******** */
 #aboutMe_ {
     width: 85vw;
     display: none;
     font-family: 'Ubuntu', sans-serif;
+    margin-left: 15vw;
+
 }
 
 #aboutMe_>h1>span {
@@ -297,6 +282,32 @@ font-family: 'Ubuntu', sans-serif; */
 #aboutMe_>ul>li {
     margin: 30px 0px;
 }
+#aboutMe_>div{
+    width: 50%;
+    margin: 40px auto;
+}
+#aboutMe_>div>div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#aboutMe_>div>div>div{
+    width: 25px;
+    margin-right: 12px;
+    /* background-color: white; */
+    /* border-radius: 100%; */
+}
+#aboutMe_>div>div>div>img{
+    width: 100%;
+    background-color: white;
+    border-radius: 100%;
+    padding: 4px;
+}
+#aboutMe_>div>div>p{
+    font-size: 1.2rem;
+}
+
 
 #skills_ {
     margin-top: 60px;
@@ -311,6 +322,8 @@ font-family: 'Ubuntu', sans-serif; */
 /* ***** */
 #skills_ {
     width: 85vw;
+    margin-left: 15vw;
+
 }
 
 #skills_>h1 {
@@ -324,8 +337,8 @@ font-family: 'Ubuntu', sans-serif; */
     width: 50%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
     transition: transform .2s ease-in-out;
 
 }
@@ -344,7 +357,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 #skills_>div>div:hover {
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
-
+    box-shadow:  rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;
 }
 
 #skills_>div>div>div>img {
@@ -355,7 +368,7 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 #skills_>div>div>h2 {
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     margin: 15px 0px;
@@ -369,7 +382,7 @@ font-family: 'Ubuntu', sans-serif; */
 #projects_ {
     display: none;
     width: 85vw;
-    margin: 60px auto;
+    margin: 60px auto 60px 16vw;
 }
 
 #projects_>h1 {
@@ -383,6 +396,7 @@ font-family: 'Ubuntu', sans-serif; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
+    margin: auto;
 }
 
 #projects_>div>div {
@@ -470,8 +484,17 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 @media all and (max-width:1100px) {
+    #content{
+        margin-left: 30vw;
+    }
     #content>div {
         margin: 100px 20px;
+    }
+    #content>div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     #profilePic {
@@ -489,7 +512,9 @@ font-family: 'Ubuntu', sans-serif; */
     #sideBarCross {
         left: 22%;
     }
-
+    #aboutMe_{
+        margin-left: 30vw;
+    }
     #aboutMe_>h1 {
         font-size: 1.8rem;
     }
@@ -498,10 +523,18 @@ font-family: 'Ubuntu', sans-serif; */
         font-size: 1.4rem;
         width: 70%;
     }
+    #aboutMe_>div>div>p{
+        font-size: 1.1rem;
+    }
+    #aboutMe_>div{
+        width: 70%;
+        margin: 40px auto;
+    }
 
     /* ****Skills *** */
     #skills_ {
         width: 85vw;
+        margin-left: 30vw;
     }
 
     #skills_>h1 {
@@ -512,7 +545,7 @@ font-family: 'Ubuntu', sans-serif; */
     }
 
     #skills_>div {
-        width: 75%;
+        width: 60%;
         margin: 20px auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -521,12 +554,13 @@ font-family: 'Ubuntu', sans-serif; */
 
     #skills_>div>div {
         /* border: 2px solid black; */
-        background-color: rgb(199, 199, 199);
+        background-color: rgb(52, 52, 52);
         border-radius: 10px;
     }
 
     #skills_>div>div:hover {
         box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+        box-shadow:  rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;;
 
     }
 
@@ -538,13 +572,16 @@ font-family: 'Ubuntu', sans-serif; */
     }
 
     #skills_>div>div>h2 {
-        font-size: 1.6vw;
+        font-size: 1.3vw;
         text-align: center;
         font-family: 'Ubuntu', sans-serif;
         margin: 15px 0px;
-        color: black;
+        color: rgb(255, 255, 255);
     }
     /* ****Project */
+    #projects_{
+       margin-left: 30vw;
+    }
     #projects_>div {
         grid-template-columns: repeat(1,1fr);
     }
@@ -552,7 +589,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 @media all and (max-width:700px) {
     #darkmode {
-        top: 2px;
+        top: -1px;
         right: 2px;
         /* font-size: 16px; */
         width: 30px;
@@ -561,7 +598,9 @@ font-family: 'Ubuntu', sans-serif; */
     #sideBar {
         display: none;
     }
-
+    #content{
+        margin-left: 0px;
+    }
     #content>div {
         display: flex;
         flex-direction: column-reverse;
@@ -597,7 +636,8 @@ font-family: 'Ubuntu', sans-serif; */
     }
 
     #topBar>h1 {
-        font-size: 1.3rem;
+        margin-top: 2px;
+        font-size: 1.5rem;
     }
 
     #topBar>ul {
@@ -630,18 +670,58 @@ font-family: 'Ubuntu', sans-serif; */
         display: none;
     }
 
-    #aboutMe>h1 {
-        font-size: 1.8rem;
-    }
-
-    #aboutMe>ul {
-        font-size: 1.2rem;
-        width: 75%;
-    }
-
     #aboutMe {
         display: block;
     }
+    #aboutMe>div{
+        width: 75%;
+        margin: 20px auto;
+    }
+    #aboutMe>div>div{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #aboutMe>div>div>div{
+        width: 20px;
+        margin-right: 10px;
+        /* background-color: white; */
+        /* border-radius: 100%; */
+    }
+    #aboutMe>div>div>div>img{
+        width: 100%;
+        background-color: white;
+        border-radius: 100%;
+        padding: 4px;
+    }
+    #aboutMe>div>div>p{
+        font-size: 1rem;
+    }
+    
+#aboutMe>h1>span {
+    color: #d15618;
+}
+
+#aboutMe>h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+#aboutMe>ul {
+    width: 75%;
+    margin: 50px auto;
+    font-size: 1.2rem;
+}
+
+#aboutMe>ul>li {
+    margin: 30px 0px;
+}
+
+    
 
     /* *****Skill****** */
     #skills>div {
@@ -671,7 +751,7 @@ font-family: 'Ubuntu', sans-serif; */
     }
 
     #skills>h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-family: 'Roboto slab', sans-serif;
         text-align: center;
         margin: 40px 0px 30px 0px;
@@ -705,9 +785,10 @@ font-family: 'Ubuntu', sans-serif; */
     }
     
     #projects>h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: center;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         font-family: 'Ubuntu', sans-serif;
     }
     
@@ -812,6 +893,13 @@ font-family: 'Ubuntu', sans-serif; */
         background-color: #d15618;
         transition: none;
         transform: none;
+    }
+    #bottom{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 60px;
+        font-size: .7rem;
+        margin-bottom: 3px;
     }
 
     /* #topBar>ul>li>img:hover{

@@ -23,20 +23,33 @@
 //     // document.getElementById("projects_").style.display="none";
     
 // });
+let mode=document.getElementById("darkmode");
+let img=document.getElementById("darkmodeimg");
+let sideBar=document.getElementById("sideBar");
+let content=document.getElementById("mainContent");
+let query=document.querySelector("body");
+let topbarimg=document.getElementsByClassName("topbarimg");
+let one=document.getElementById("one");
+function turnOnDark(){
+    img.src="img/sun.png";
+    mode.style.backgroundColor="black";
+    sideBar.style.color="rgb(199, 199, 199)";
+    sideBar.style.backgroundColor="#d15618";
+    query.style.backgroundColor="black";
+    query.style.color="white";
+    content.style.backgroundColor="black";
+    content.style.color="white";
+    one.style.backgroundColor="black";
+    one.style.color="white";
+    topbarimg.style.color="white";
+}
 document.getElementById("darkmode").addEventListener("click",function(){
-    let mode=document.getElementById("darkmode");
-    let img=document.getElementById("darkmodeimg");
-    let sideBar=document.getElementById("sideBar");
-    let content=document.getElementById("mainContent");
-    let query=document.querySelector("body");
-    let one=document.getElementById("one");
+    
     // let java1=document.getElementById("javadark1");
     // let java=document.getElementById("javadark");
-    let topbarimg=document.getElementsByClassName("topbarimg");
     if(mode.innerHTML=='<img id="darkmodeimg" src="img/moon.png" alt="">'){
         img.src="img/sun.png";
         mode.style.backgroundColor="black";
-        // img.style.backgroundColor="white";
         sideBar.style.color="rgb(199, 199, 199)";
         sideBar.style.backgroundColor="#d15618";
         query.style.backgroundColor="black";
@@ -83,6 +96,7 @@ if(screen.width< 700){
     document.getElementById("aboutMe_").style.display="none";
     document.getElementById("skills_").style.display="none";
     document.getElementById("projects_").style.display="none";
+
 }
 function showSkills(){
     document.getElementById("skills_").style.display="block";
@@ -96,6 +110,9 @@ function showProjects(){
     document.getElementById("aboutMe_").style.display="none";
     document.getElementById("projects_").style.display="block";
     document.getElementById("projects_").style.width="80vw";
+}
+function goToMail(){
+    window.open("mailto:sumitpanchal9034@gamil.com");
 }
 function goToResume(){
     window.open("https://drive.google.com/file/d/1uXhdN0aRukVBCJm5lKZ0P1xO6aOLm_Ob/view?usp=sharing","_blank");
