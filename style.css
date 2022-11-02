@@ -282,29 +282,29 @@ font-family: 'Ubuntu', sans-serif; */
 #aboutMe_>ul>li {
     margin: 30px 0px;
 }
-#aboutMe_>div{
+#aboutMe_>div:nth-child(6){
     width: 50%;
     margin: 40px auto;
 }
-#aboutMe_>div>div{
+#aboutMe_>div:nth-child(6)>div{
     display: flex;
     justify-content: start;
     align-items: center;
     margin-bottom: 20px;
 }
-#aboutMe_>div>div>div{
+#aboutMe_>div:nth-child(6)>div>div{
     width: 25px;
     margin-right: 12px;
     /* background-color: white; */
     /* border-radius: 100%; */
 }
-#aboutMe_>div>div>div>img{
+#aboutMe_>div:nth-child(6)>div>div>img{
     width: 100%;
     background-color: white;
     border-radius: 100%;
     padding: 4px;
 }
-#aboutMe_>div>div>p{
+#aboutMe_>div:nth-child(6)>div>p{
     font-size: 1.2rem;
 }
 
@@ -483,7 +483,10 @@ font-family: 'Ubuntu', sans-serif; */
     width: 100%;
 }
 
-@media all and (max-width:1100px) {
+@media all and (max-width:1000px) {
+    .js-calendar-graph-svg{
+        width: 100%;
+    }
     #content{
         margin-left: 30vw;
     }
@@ -585,9 +588,13 @@ font-family: 'Ubuntu', sans-serif; */
     #projects_>div {
         grid-template-columns: repeat(1,1fr);
     }
+    #gitCal , .calendar{
+        display: none;
+    }
 }
 
 @media all and (max-width:700px) {
+   
     #darkmode {
         top: -1px;
         right: 2px;
@@ -910,4 +917,35 @@ font-family: 'Ubuntu', sans-serif; */
             transition: none;
             transform: none;
         } */
+}
+
+
+
+
+
+
+/* 
+
+
+@import url(../../dist/github-calendar-responsive.css);
+@import url(https://unpkg.com/bag.css@1.0.12/dist/bag.fixed.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css);
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
+.bag > h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.monospace {
+    font-family: 'Cutive Mono', monospace !important;
+} */
+.js-calendar-graph-svg{
+    width: 100%;
+    /* overflow: scroll; */
+}
+.contrib-number{
+    color: white;
 }

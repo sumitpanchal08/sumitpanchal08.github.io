@@ -23,6 +23,7 @@
 //     // document.getElementById("projects_").style.display="none";
     
 // });
+
 let mode=document.getElementById("darkmode");
 let img=document.getElementById("darkmodeimg");
 let sideBar=document.getElementById("sideBar");
@@ -42,6 +43,7 @@ function turnOnDark(){
     one.style.backgroundColor="black";
     one.style.color="white";
     topbarimg.style.color="white";
+    document.getElementsByClassName("contrib-number").style.color="white";
 }
 document.getElementById("darkmode").addEventListener("click",function(){
     
@@ -120,3 +122,6 @@ function goToResume(){
 function goToWhatsapp(){
     window.open("https://wa.me/918168471581?text=Hello!%20Can%20you%20tell%20me%20more%20about%20you?");
 }
+
+
+
