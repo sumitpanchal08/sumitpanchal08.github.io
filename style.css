@@ -7,9 +7,57 @@ font-family: 'Ubuntu', sans-serif; */
     padding: 0;
     margin: 0;
 }
-#mobile_navbar{
+#gitCall{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#gitCall>div{
+    width: 100%;
+}
+#gitCall>img:nth-child(2){
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+#gitCall>img:nth-child(3){
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+#mobile_navbar {
     display: none;
 }
+#dropDownMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transition: left 0.5s;
+    z-index: 2;
+    top: 0px;
+    left: -150px;
+    background-color: #d15618;
+}
+#dropDownMenu>img{
+    width: 20px;
+    margin: 10px 0px;
+}
+#dropDownMenu>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropDownMenu>div>a {
+    text-decoration: none;
+    color: white;
+    margin: 20px 20px;
+    font-size: 1rem;
+}
+
 #darkmode {
     position: absolute;
     top: 10px;
@@ -242,7 +290,7 @@ font-family: 'Ubuntu', sans-serif; */
 #profilePic>img:hover {
     transition: transform 1s ease-in-out;
     transform: scale(1.05);
-    box-shadow:  rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;
 
 }
 
@@ -254,6 +302,7 @@ font-family: 'Ubuntu', sans-serif; */
     display: none;
     font-family: 'Ubuntu', sans-serif;
 }
+
 /* ************ */
 #contact_ {
     width: 85vw;
@@ -283,31 +332,38 @@ font-family: 'Ubuntu', sans-serif; */
 #contact_>ul>li {
     margin: 30px 0px;
 }
-#contact_>div{
+
+#contact_>div {
     width: 50%;
     margin: 40px auto;
 }
-#contact_>div>div{
+
+#contact_>div>div {
     display: flex;
     justify-content: start;
     align-items: center;
     margin-bottom: 20px;
+    cursor: pointer;
 }
-#contact_>div>div>div{
+
+#contact_>div>div>div {
     width: 25px;
     margin-right: 12px;
     /* background-color: white; */
     /* border-radius: 100%; */
 }
-#contact_>div>div>div>img{
+
+#contact_>div>div>div>img {
     width: 100%;
     background-color: white;
     border-radius: 100%;
     padding: 4px;
 }
-#contact_>div:nth-child(6)>div>p{
+
+#contact_>div:nth-child(6)>div>p {
     font-size: 1.2rem;
 }
+
 /* ******** */
 #aboutMe_ {
     width: 85vw;
@@ -386,7 +442,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 #skills_>div>div:hover {
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
-    box-shadow:  rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;
 }
 
 #skills_>div>div>div>img {
@@ -407,6 +463,7 @@ font-family: 'Ubuntu', sans-serif; */
 #projects {
     display: none;
 }
+
 /* ****Projects**** */
 #projects_ {
     display: none;
@@ -423,7 +480,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 #projects_>div {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin: auto;
 }
@@ -437,21 +494,26 @@ font-family: 'Ubuntu', sans-serif; */
     border-radius: 5px;
     margin: 10px 10px;
     padding: 20px 10px;
-    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
     background-color: rgb(52, 52, 52);
     padding: 2px 10px;
     transition: transform .2s ease-in-out;
 }
-#projects_>div>div:hover{
-    box-shadow:  rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;;
+
+#projects_>div>div:hover {
+    box-shadow: rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;
+    ;
     transition: transform 1.3s ease-in-out;
     transform: scale(1.05);
 }
-#projects_>div>div>div:nth-child(1){
+
+#projects_>div>div>div:nth-child(1) {
     display: flex;
     z-index: 1;
 }
-#projects_>div>div>div:nth-child(1)>a>div{
+
+#projects_>div>div>div:nth-child(1)>a>div {
     display: flex;
     justify-content: space-between;
     /* z-index: 10; */
@@ -461,21 +523,26 @@ font-family: 'Ubuntu', sans-serif; */
     margin-bottom: 5px;
     padding: 5px;
 }
-.hidehov{
+
+.hidehov {
     display: none;
 }
-#projects_>div>div>div:nth-child(1)>a>div>img{
+
+#projects_>div>div>div:nth-child(1)>a>div>img {
     width: 100%;
     background-color: white;
     border-radius: 100%;
 }
-#projects_>div>div>div:nth-child(2)>div{
+
+#projects_>div>div>div:nth-child(2)>div {
     width: 100%;
 }
-#projects_>div>div>div:nth-child(2)>div>img{
+
+#projects_>div>div>div:nth-child(2)>div>img {
     width: 100%;
 }
-.showhov:hover + .hidehov{
+
+.showhov:hover+.hidehov {
     display: block;
     background-color: white;
     z-index: 10;
@@ -487,7 +554,7 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 #projects_>div>div>div>h2 {
-    color:#d15618;
+    color: #d15618;
     font-size: 1.7rem;
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -499,29 +566,53 @@ font-family: 'Ubuntu', sans-serif; */
     font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
 }
-#techstack_{
+
+#techstack_ {
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 10px;
 }
-#techstack_>div{
+
+#techstack_>div {
     width: 60px;
     /* width: 100%; */
 }
-#techstack_>div>img{
+
+#techstack_>div>img {
     width: 100%;
 }
 
 @media all and (max-width:1000px) {
-    .js-calendar-graph-svg{
+    /* .js-calendar-graph-svg {
+        width: 60vw;
+    } */
+    #gitCall{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    #gitCall>div{
         width: 100%;
     }
-    #content{
+    #gitCall>img:nth-child(2){
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    #gitCall>img:nth-child(3){
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    #content {
         margin-left: 30vw;
     }
+
     #content>div {
         margin: 100px 20px;
     }
+
     #content>div {
         display: flex;
         flex-direction: column-reverse;
@@ -544,9 +635,11 @@ font-family: 'Ubuntu', sans-serif; */
     #sideBarCross {
         left: 22%;
     }
-    #aboutMe_{
+
+    #aboutMe_ {
         margin-left: 30vw;
     }
+
     #aboutMe_>h1 {
         font-size: 1.8rem;
     }
@@ -555,10 +648,12 @@ font-family: 'Ubuntu', sans-serif; */
         font-size: 1.4rem;
         width: 70%;
     }
-    #aboutMe_>div>div>p{
+
+    #aboutMe_>div>div>p {
         font-size: 1.1rem;
     }
-    #aboutMe_>div{
+
+    #aboutMe_>div {
         width: 70%;
         margin: 40px auto;
     }
@@ -592,7 +687,8 @@ font-family: 'Ubuntu', sans-serif; */
 
     #skills_>div>div:hover {
         box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
-        box-shadow:  rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;;
+        box-shadow: rgba(255, 72, 0, 0.25) 0px 54px 55px, rgba(255, 72, 0, 0.12) 0px -12px 30px, rgba(254, 72, 0, 0.12) 0px 4px 6px, rgba(253, 72, 2, 0.17) 0px 12px 13px, rgba(255, 72, 0, 0.09) 0px -3px 5px;
+        ;
 
     }
 
@@ -610,42 +706,69 @@ font-family: 'Ubuntu', sans-serif; */
         margin: 15px 0px;
         color: rgb(255, 255, 255);
     }
+
     /* ****Project */
-    #projects_{
-       margin-left: 30vw;
+    #projects_ {
+        margin-left: 30vw;
     }
+
     #projects_>div {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    #gitCal , .calendar{
-        display: none;
-    }
+
+    /* .calendar {
+        width: 60vw;
+    } */
 }
 
 @media all and (max-width:700px) {
-    #mobile_navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    margin: auto;
-    transition: top 0.5s; 
-    z-index: 1;
-    background-color: #d15618;
+    #gitCallMobile{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
     }
-    #mobile_navbar>div{
+    #gitCallMobile>div{
+        width: 100%;
+    }
+    #gitCallMobile>img:nth-child(2){
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    #gitCallMobile>img:nth-child(3){
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    #mobile_navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: -10;
+        left: -10;
+        padding: 10px 0px 0px 10px;
+        width: 18%;
+        border-radius: 10px;
+        margin: auto;
+        transition: top 0.5s;
+        z-index: 1;
+        background-color: #d15618;
+    }
+
+    #mobile_navbar>div {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    #mobile_navbar>div>a{
+
+    #mobile_navbar>div>a {
         text-decoration: none;
         color: white;
         margin: 10px 5px;
-        font-size: .9rem;
+        font-size: 1rem;
     }
+
     #darkmode {
         top: -1px;
         right: 2px;
@@ -656,9 +779,11 @@ font-family: 'Ubuntu', sans-serif; */
     #sideBar {
         display: none;
     }
-    #content{
+
+    #content {
         margin-left: 0px;
     }
+
     #content>div {
         display: flex;
         flex-direction: column-reverse;
@@ -701,7 +826,7 @@ font-family: 'Ubuntu', sans-serif; */
     #topBar>ul {
         position: fixed;
         bottom: 20px;
-        left: 8px;
+        right: 8px;
         flex-direction: column;
     }
 
@@ -731,55 +856,60 @@ font-family: 'Ubuntu', sans-serif; */
     #aboutMe {
         display: block;
     }
-    #aboutMe>div{
+
+    #aboutMe>div {
         width: 75%;
         margin: 20px auto;
     }
-    #aboutMe>div>div{
+
+    #aboutMe>div>div {
         display: flex;
         justify-content: start;
         align-items: center;
         margin-bottom: 20px;
     }
-    #aboutMe>div>div>div{
+
+    #aboutMe>div>div>div {
         width: 20px;
         margin-right: 10px;
         /* background-color: white; */
         /* border-radius: 100%; */
     }
-    #aboutMe>div>div>div>img{
+
+    #aboutMe>div>div>div>img {
         width: 100%;
         background-color: white;
         border-radius: 100%;
         padding: 4px;
     }
-    #aboutMe>div>div>p{
+
+    #aboutMe>div>div>p {
         font-size: 1rem;
     }
-    
-#aboutMe>h1>span {
-    color: #d15618;
-}
 
-#aboutMe>h1 {
-    margin-top: 40px;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-}
+    #aboutMe>h1>span {
+        color: #d15618;
+    }
 
-#aboutMe>ul {
-    width: 75%;
-    margin: 50px auto;
-    font-size: 1.2rem;
-}
+    #aboutMe>h1 {
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
 
-#aboutMe>ul>li {
-    margin: 30px 0px;
-}
+    #aboutMe>ul {
+        width: 75%;
+        margin: 50px auto;
+        font-size: 1.2rem;
+    }
 
-    
+    #aboutMe>ul>li {
+        margin: 30px 0px;
+    }
+
+
 
     /* *****Skill****** */
     #skills>div {
@@ -835,13 +965,14 @@ font-family: 'Ubuntu', sans-serif; */
         background-color: #d15618;
         /* margin-left: 30px; */
     }
+
     /* ***Project**** started */
     #projects {
         display: block;
         width: 90vw;
         margin: 35px auto;
     }
-    
+
     #projects>h1 {
         font-size: 1.8rem;
         text-align: center;
@@ -849,13 +980,13 @@ font-family: 'Ubuntu', sans-serif; */
         margin-bottom: 30px;
         font-family: 'Ubuntu', sans-serif;
     }
-    
+
     #projects>div {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 15px;
     }
-    
+
     #projects>div>div {
         display: flex;
         justify-content: start;
@@ -865,15 +996,18 @@ font-family: 'Ubuntu', sans-serif; */
         border-radius: 5px;
         margin: 10px 10px;
         padding: 20px 10px;
-        box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        ;
         background-color: rgb(52, 52, 52);
         padding: 2px 10px;
     }
-    #projects>div>div>div:nth-child(1){
+
+    #projects>div>div>div:nth-child(1) {
         display: flex;
         z-index: 1;
     }
-    #projects>div>div>div:nth-child(1)>a>div{
+
+    #projects>div>div>div:nth-child(1)>a>div {
         display: flex;
         justify-content: space-between;
         /* z-index: 10; */
@@ -883,21 +1017,26 @@ font-family: 'Ubuntu', sans-serif; */
         margin-bottom: 5px;
         padding: 5px;
     }
-    .hidehov{
+
+    .hidehov {
         display: none;
     }
-    #projects>div>div>div:nth-child(1)>a>div>img{
+
+    #projects>div>div>div:nth-child(1)>a>div>img {
         width: 100%;
         background-color: white;
         border-radius: 100%;
     }
-    #projects>div>div>div:nth-child(2)>div{
+
+    #projects>div>div>div:nth-child(2)>div {
         width: 100%;
     }
-    #projects>div>div>div:nth-child(2)>div>img{
+
+    #projects>div>div>div:nth-child(2)>div>img {
         width: 100%;
     }
-    .showhov:hover + .hidehov{
+
+    .showhov:hover+.hidehov {
         display: block;
         background-color: white;
         z-index: 10;
@@ -907,30 +1046,33 @@ font-family: 'Ubuntu', sans-serif; */
         padding: 2px;
         border-radius: 5px;
     }
-    
+
     #projects>div>div>div>h2 {
-        color:#d15618;
+        color: #d15618;
         font-size: 1.1rem;
         font-family: 'Roboto Slab', serif;
         text-align: center;
         margin: 5px 0px 2px 0px;
     }
-    
+
     #projects>div>div>div>p {
         color: rgb(199, 199, 199);
         font-size: .9rem;
         font-family: 'Roboto', sans-serif;
     }
-    #techstack{
+
+    #techstack {
         display: grid;
-        grid-template-columns: repeat(8,1fr);
+        grid-template-columns: repeat(8, 1fr);
         gap: 5px;
     }
-    #techstack>div{
+
+    #techstack>div {
         width: 40px;
         /* width: 100%; */
     }
-    #techstack>div>img{
+
+    #techstack>div>img {
         width: 100%;
     }
 
@@ -952,7 +1094,8 @@ font-family: 'Ubuntu', sans-serif; */
         transition: none;
         transform: none;
     }
-    #bottom{
+
+    #bottom {
         text-align: center;
         font-family: 'Roboto', sans-serif;
         margin-top: 60px;
@@ -993,10 +1136,11 @@ font-family: 'Ubuntu', sans-serif; */
 .monospace {
     font-family: 'Cutive Mono', monospace !important;
 } */
-.js-calendar-graph-svg{
+.js-calendar-graph-svg {
     width: 100%;
     /* overflow: scroll; */
 }
-.contrib-number{
+
+.contrib-number {
     color: white;
 }

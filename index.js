@@ -143,9 +143,21 @@ let privScrollpos = window.pageYOffset;
     window.onscroll = function () {
         let currentScrollpos = window.pageYOffset;
         if (currentScrollpos > privScrollpos) {
-            document.getElementById("mobile_navbar").style.top = "0px";
+            document.getElementById("mobile_navbar").style.top = "-10px";
+            document.getElementById("mobile_navbar").style.left = "-10px";
         } else {
             document.getElementById("mobile_navbar").style.top = "-150px";
         }
         privScrollpos = currentScrollpos;
     }
+
+    let dropDownMenuOpen=document.getElementById("dropDownMenuOpen");
+    dropDownMenuOpen.addEventListener("click",function(){
+        let menu=document.getElementById("dropDownMenu");
+        menu.style.left="0px";
+    })
+    let dropDownMenuClose=document.getElementById("dropDownMenuClose");
+    dropDownMenuClose.addEventListener("click",function(){
+        let menu=document.getElementById("dropDownMenu");
+        menu.style.left="-200px";
+    })

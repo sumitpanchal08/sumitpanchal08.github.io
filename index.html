@@ -13,6 +13,18 @@
 <body onload="turnOnDark()">
     <div id="mobile_navbar">
         <div>
+            <a id="dropDownMenuOpen">Menu</a>
+            <!-- <a href="#content">HOME</a>
+            <a href="#aboutMe">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#aboutMe">CONTACT</a>
+            <a onclick="goToResume()">RESUME</a> -->
+        </div>
+    </div>
+    <div id="dropDownMenu">
+        <img id="dropDownMenuClose" src="img/cross.png">
+        <div>
             <a href="#content">HOME</a>
             <a href="#aboutMe">ABOUT</a>
             <a href="#skills">SKILLS</a>
@@ -20,6 +32,7 @@
             <a href="#aboutMe">CONTACT</a>
             <a onclick="goToResume()">RESUME</a>
         </div>
+        
     </div>
     <div id="darkmode"><img id="darkmodeimg" src="img/moon.png" alt=""></div>
     <div id="topBar">
@@ -80,32 +93,26 @@
                     a challenging role in industry to utilize my
                     skills and learn.</li>
             </ul>
-            <!-- <div class="calendar">
-                <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" class="spinner"/>
-                <p class="spinner-text monospace">Crunching <a href="https://github.com/sumitpanchal08">@sumitpanchal08</a>'s contributions just for you.</p>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
-            <script src="../dist/github-calendar.min.js"></script>
-            <script src="index.js"></script> -->
-            <h1 id="gitCal">GitHub <span>Stats & Contributions</span></h1>
-            <!-- Prepare a container for your calendar. -->
-            <div class="calendar">
-                <!-- Loading stuff -->
-                Loading the data just for you.
-            </div>
         </div>
         <div id="contact_">
            
             <h1>Get in <span>Touch</span></h1>
             <div>
-                <div>
+                <div onclick="goToMail()">
                     <div><img src="img/mail.png" alt=""></div>
                     <p>sumitpanchal9034@gmail.com</p>
                 </div>
                 <div>
                     <div><img src="img/call.png" alt=""></div>
                     <p>+91 8168471581</p>
+                </div>
+                <div onclick="goToGit()">
+                    <div><img src="img/git.png" alt=""></div>
+                    <p>Github-sumitpanchal08</p>
+                </div>
+                <div onclick="goToIn()">
+                    <div><img src="img/linkedin.png" alt=""></div>
+                    <p>linkedin-sumitpanchal08</p>
                 </div>
             </div>
         </div>
@@ -199,6 +206,16 @@
                     <h2>Postman</h2>
                 </div>
             </div>
+            <h1 id="gitCal">GitHub <span>Stats & Contributions</span></h1>
+            <!-- Prepare a container for your calendar. -->
+            
+            <section id="gitCall"><div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+                <img src="https://github-readme-stats.vercel.app/api?username=sumitpanchal08&show_icons=true&theme=transparent"/>
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sumitpanchal08&theme=transparent"/>
+            </section>
         </div>
         <div id="projects_">
             <h1>Projects</h1>
@@ -447,6 +464,16 @@
                     <h2>Postman</h2>
                 </div>
             </div>
+            <h1 id="gitCal">GitHub <span>Stats & Contributions</span></h1>
+            <!-- Prepare a container for your calendar. -->
+            
+            <section id="gitCallMobile"><div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+                <img src="https://github-readme-stats.vercel.app/api?username=sumitpanchal08&show_icons=true&theme=transparent"/>
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sumitpanchal08&theme=transparent"/>
+            </section>
     </div>
     <div id="projects">
         <h1>Projects</h1>
@@ -638,9 +665,10 @@
             rel="stylesheet"
             href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
           /> -->
-<script>
-    new GitHubCalendar(".calendar", "sumitpanchal08");
-</script>
+          <script>
+            GitHubCalendar(".calendar", "sumitpanchal08");
+            GitHubCalendar(".calendar", "sumitpanchal08", { responsive: true });
+        </script>
 <script src="index.js"></script>
 
 </html>
