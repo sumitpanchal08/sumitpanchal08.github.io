@@ -84,17 +84,20 @@ function goToIn(){
 function showHome(){
     document.getElementById("content").style.display="block";
     document.getElementById("aboutMe_").style.display="none";
+    document.getElementById("contact_").style.display="none";
     document.getElementById("skills_").style.display="none";
     document.getElementById("projects_").style.display="none";
 }
 function showAbout(){
     document.getElementById("content").style.display="none";
     document.getElementById("aboutMe_").style.display="block";
+    document.getElementById("contact_").style.display="none";
     document.getElementById("skills_").style.display="none";
     document.getElementById("projects_").style.display="none";
 }
 if(screen.width< 700){
     document.getElementById("content").style.display="block";
+    document.getElementById("contact_").style.display="none";
     document.getElementById("aboutMe_").style.display="none";
     document.getElementById("skills_").style.display="none";
     document.getElementById("projects_").style.display="none";
@@ -102,16 +105,26 @@ if(screen.width< 700){
 }
 function showSkills(){
     document.getElementById("skills_").style.display="block";
+    document.getElementById("contact_").style.display="none";
     document.getElementById("content").style.display="none";
     document.getElementById("aboutMe_").style.display="none";
     document.getElementById("projects_").style.display="none";
 }
 function showProjects(){
     document.getElementById("skills_").style.display="none";
+    document.getElementById("contact_").style.display="none";
     document.getElementById("content").style.display="none";
     document.getElementById("aboutMe_").style.display="none";
     document.getElementById("projects_").style.display="block";
     document.getElementById("projects_").style.width="80vw";
+}
+function showContact(){
+    document.getElementById("skills_").style.display="none";
+    document.getElementById("content").style.display="none";
+    document.getElementById("aboutMe_").style.display="none";
+    document.getElementById("projects_").style.display="none";
+    document.getElementById("contact_").style.display="block";
+    document.getElementById("contact_").style.width="80vw";
 }
 function goToMail(){
     window.open("mailto:sumitpanchal9034@gamil.com");
@@ -126,3 +139,13 @@ function goToWhatsapp(){
 
 
 
+let privScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        let currentScrollpos = window.pageYOffset;
+        if (currentScrollpos > privScrollpos) {
+            document.getElementById("mobile_navbar").style.top = "0px";
+        } else {
+            document.getElementById("mobile_navbar").style.top = "-150px";
+        }
+        privScrollpos = currentScrollpos;
+    }

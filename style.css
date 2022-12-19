@@ -7,7 +7,9 @@ font-family: 'Ubuntu', sans-serif; */
     padding: 0;
     margin: 0;
 }
-
+#mobile_navbar{
+    display: none;
+}
 #darkmode {
     position: absolute;
     top: 10px;
@@ -252,7 +254,60 @@ font-family: 'Ubuntu', sans-serif; */
     display: none;
     font-family: 'Ubuntu', sans-serif;
 }
+/* ************ */
+#contact_ {
+    width: 85vw;
+    display: none;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 15vw;
 
+}
+
+#contact_>h1>span {
+    color: #d15618;
+}
+
+#contact_>h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+}
+
+#contact_>ul {
+    width: 50%;
+    margin: 50px auto;
+    font-size: 1.8rem;
+}
+
+#contact_>ul>li {
+    margin: 30px 0px;
+}
+#contact_>div{
+    width: 50%;
+    margin: 40px auto;
+}
+#contact_>div>div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#contact_>div>div>div{
+    width: 25px;
+    margin-right: 12px;
+    /* background-color: white; */
+    /* border-radius: 100%; */
+}
+#contact_>div>div>div>img{
+    width: 100%;
+    background-color: white;
+    border-radius: 100%;
+    padding: 4px;
+}
+#contact_>div:nth-child(6)>div>p{
+    font-size: 1.2rem;
+}
 /* ******** */
 #aboutMe_ {
     width: 85vw;
@@ -282,32 +337,6 @@ font-family: 'Ubuntu', sans-serif; */
 #aboutMe_>ul>li {
     margin: 30px 0px;
 }
-#aboutMe_>div:nth-child(6){
-    width: 50%;
-    margin: 40px auto;
-}
-#aboutMe_>div:nth-child(6)>div{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-bottom: 20px;
-}
-#aboutMe_>div:nth-child(6)>div>div{
-    width: 25px;
-    margin-right: 12px;
-    /* background-color: white; */
-    /* border-radius: 100%; */
-}
-#aboutMe_>div:nth-child(6)>div>div>img{
-    width: 100%;
-    background-color: white;
-    border-radius: 100%;
-    padding: 4px;
-}
-#aboutMe_>div:nth-child(6)>div>p{
-    font-size: 1.2rem;
-}
-
 
 #skills_ {
     margin-top: 60px;
@@ -594,7 +623,29 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 @media all and (max-width:700px) {
-   
+    #mobile_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    margin: auto;
+    transition: top 0.5s; 
+    z-index: 1;
+    background-color: #d15618;
+    }
+    #mobile_navbar>div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mobile_navbar>div>a{
+        text-decoration: none;
+        color: white;
+        margin: 10px 5px;
+        font-size: .9rem;
+    }
     #darkmode {
         top: -1px;
         right: 2px;

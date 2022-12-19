@@ -11,6 +11,16 @@
 </head>
 
 <body onload="turnOnDark()">
+    <div id="mobile_navbar">
+        <div>
+            <a href="#content">HOME</a>
+            <a href="#aboutMe">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#aboutMe">CONTACT</a>
+            <a onclick="goToResume()">RESUME</a>
+        </div>
+    </div>
     <div id="darkmode"><img id="darkmodeimg" src="img/moon.png" alt=""></div>
     <div id="topBar">
         <div>
@@ -33,6 +43,7 @@
                 <li onclick="showAbout()">ABOUT</li>
                 <li onclick="showSkills()">SKILLS</li>
                 <li onclick="showProjects()">PROJECTS</li>
+                <li onclick="showContact()">CONTACT</li>
                 <li onclick="goToResume()">RESUME</li>
             </ul>
             <div><img onclick="goToGit()" src="img/git.png" alt="">
@@ -78,25 +89,25 @@
             <script src="../dist/github-calendar.min.js"></script>
             <script src="index.js"></script> -->
             <h1 id="gitCal">GitHub <span>Stats & Contributions</span></h1>
-          <!-- Prepare a container for your calendar. -->
-          <div class="calendar">
-              <!-- Loading stuff -->
-              Loading the data just for you.
-          </div>
-          
-          
-
-        <h1>Get in <span>Touch</span></h1>
-        <div>
-            <div>
-                <div><img src="img/mail.png" alt=""></div>
-                <p>sumitpanchal9034@gmail.com</p>
-            </div>
-            <div>
-                <div><img src="img/call.png" alt=""></div>
-                <p>+91 8168471581</p>
+            <!-- Prepare a container for your calendar. -->
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
             </div>
         </div>
+        <div id="contact_">
+           
+            <h1>Get in <span>Touch</span></h1>
+            <div>
+                <div>
+                    <div><img src="img/mail.png" alt=""></div>
+                    <p>sumitpanchal9034@gmail.com</p>
+                </div>
+                <div>
+                    <div><img src="img/call.png" alt=""></div>
+                    <p>+91 8168471581</p>
+                </div>
+            </div>
         </div>
         <div id="skills_">
             <h1>Skills</h1>
@@ -147,7 +158,7 @@
 
                         <img src="img/gitskill.png" alt="">
                     </div>
-                    <h2>Git</h2>
+                    <h2>Git&Github</h2>
                 </div>
                 <div>
                     <div>
@@ -157,19 +168,52 @@
                     <h2>MySQL</h2>
                 </div>
             </div>
+            <h1>Tools</h1>
+            <div>
+                <div>
+                    <div>
+
+                        <img src="img/ij.png" alt="">
+                    </div>
+                    <h2>IntelliJ</h2>
+                </div>
+                <div>
+                    <div>
+
+                        <img src="img/spring.png" alt="">
+                    </div>
+                    <h2>STS</h2>
+                </div>
+                <div>
+                    <div>
+
+                        <img src="img/vscode.png" alt="">
+                    </div>
+                    <h2>VS Code</h2>
+                </div>
+                <div>
+                    <div>
+
+                        <img src="img/postman.png" alt="">
+                    </div>
+                    <h2>Postman</h2>
+                </div>
+            </div>
         </div>
         <div id="projects_">
             <h1>Projects</h1>
             <div>
                 <div>
                     <div>
-                        <a href="https://github.com/sumitpanchal08/null-industry-4610" target="_blank" rel="noopener noreferrer">
-                           <div>
-                            <img class="showhov" src="img/git.png" alt="">
-                            <div class="hidehov">GitHub</div>
-                        </div> 
+                        <a href="https://github.com/sumitpanchal08/null-industry-4610" target="_blank"
+                            rel="noopener noreferrer">
+                            <div>
+                                <img class="showhov" src="img/git.png" alt="">
+                                <div class="hidehov">GitHub</div>
+                            </div>
                         </a>
-                        <a href="https://drive.google.com/file/d/1q8KhutxYVVQx1cgcsgDhSI6PVVwavj2T/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://drive.google.com/file/d/1q8KhutxYVVQx1cgcsgDhSI6PVVwavj2T/view?usp=share_link"
+                            target="_blank" rel="noopener noreferrer">
 
                             <div>
                                 <img class="showhov" src="img/video.png" alt="">
@@ -182,40 +226,43 @@
                             <div class="hidehov"></div>
                         </div>
                         </a> -->
-                        
+
                     </div>
                     <div>
                         <div>
                             <img src="img/bankdb.png" alt="">
                         </div>
                         <h2>Online Banking System (Backend)</h2>
-                        <p>The objective of this project is to maintain the accounts like saving account, withdrawing, depositing money and applying loan to the user.</p>
+                        <p>The objective of this project is to maintain the accounts like saving account, withdrawing,
+                            depositing money and applying loan to the user.</p>
                         <h2>Tech stack</h2>
-                                <div id="techstack_">
-                                    <div>
-                                        <img src="img/java.png" alt="">
-                                    </div>
-                                    <div>
-                                         <img src="img/mysql.png" alt="">
-                                    </div>
-                                    <!-- <div>
+                        <div id="techstack_">
+                            <div>
+                                <img src="img/java.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/mysql.png" alt="">
+                            </div>
+                            <!-- <div>
                                         <img src="img/js.png" alt="">
                                     </div> -->
-                                </div>
+                        </div>
 
-                     </div>
-                    
+                    </div>
+
 
                 </div>
                 <div>
                     <div>
-                        <a href="https://github.com/sumitpanchal08/befitting-harbor-9010" target="_blank" rel="noopener noreferrer">
-                           <div>
-                            <img class="showhov" src="img/git.png" alt="">
-                            <div class="hidehov">GitHub</div>
-                        </div> 
+                        <a href="https://github.com/sumitpanchal08/befitting-harbor-9010" target="_blank"
+                            rel="noopener noreferrer">
+                            <div>
+                                <img class="showhov" src="img/git.png" alt="">
+                                <div class="hidehov">GitHub</div>
+                            </div>
                         </a>
-                        <a href="https://www.linkedin.com/posts/sumitpanchal08_clonewebsite-advancedjavascript-activity-6969629554998960128-iuZ0?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/posts/sumitpanchal08_clonewebsite-advancedjavascript-activity-6969629554998960128-iuZ0?utm_source=share&utm_medium=member_desktop"
+                            target="_blank" rel="noopener noreferrer">
 
                             <div>
                                 <img class="showhov" src="img/video.png" alt="">
@@ -224,57 +271,61 @@
                         </a>
                         <a href="https://timely-gumdrop-6783b4.netlify.app/" target="_blank" rel="noopener noreferrer">
                             <div>
-                            <img class="showhov" src="img/live.png" alt="">
-                            <div class="hidehov">Live</div>
-                        </div>
+                                <img class="showhov" src="img/live.png" alt="">
+                                <div class="hidehov">Live</div>
+                            </div>
                         </a>
-                        
+
                     </div>
                     <div>
                         <div>
                             <img src="img/rento.png" alt="">
                         </div>
                         <h2>Rentomojo Website-Clone (Frontend)</h2>
-                        <p>RentoMojo is a Ecommerce website where you rent/purchase furniture, appliances, and electronics.</p>
+                        <p>RentoMojo is a Ecommerce website where you rent/purchase furniture, appliances, and
+                            electronics.</p>
                         <h2>Tech stack</h2>
-                                <div id="techstack_">
-                                    <div>
-                                        <img src="img/html.png" alt="">
-                                    </div>
-                                    <div>
-                                         <img src="img/css.png" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="img/js.png" alt="">
-                                    </div>
-                                </div>
+                        <div id="techstack_">
+                            <div>
+                                <img src="img/html.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/css.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/js.png" alt="">
+                            </div>
+                        </div>
 
-                     </div>
-                    
+                    </div>
+
 
                 </div>
                 <div>
                     <div>
-                        <a href="https://github.com/sumitpanchal08/scenic-wood-5639" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/sumitpanchal08/scenic-wood-5639" target="_blank"
+                            rel="noopener noreferrer">
                             <div>
                                 <img class="showhov" src="img/git.png" alt="">
                                 <div class="hidehov">GitHub</div>
                             </div>
                         </a>
-                            <a href="https://www.linkedin.com/posts/sumitpanchal08_html-css-javascript-activity-6957552163061444608-_hsR?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                                <div>
+                        <a href="https://www.linkedin.com/posts/sumitpanchal08_html-css-javascript-activity-6957552163061444608-_hsR?utm_source=share&utm_medium=member_desktop"
+                            target="_blank" rel="noopener noreferrer">
+                            <div>
                                 <img class="showhov" src="img/video.png" alt="">
                                 <div class="hidehov">Video</div>
                             </div>
-                            </a>
-                            <a href="https://verdant-buttercream-9ee148.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        </a>
+                        <a href="https://verdant-buttercream-9ee148.netlify.app/" target="_blank"
+                            rel="noopener noreferrer">
 
-                                <div>
-                                    <img class="showhov" src="img/live.png" alt="">
-                                    <div class="hidehov">Live</div>
-                                </div>
-                            </a>
-                        
+                            <div>
+                                <img class="showhov" src="img/live.png" alt="">
+                                <div class="hidehov">Live</div>
+                            </div>
+                        </a>
+
                     </div>
                     <div>
                         <div>
@@ -287,24 +338,24 @@
                                 href="https://github.com/sumitpanchal08/scenic-wood-5639">GitHub</a> or on <a
                                 target="_blank" href="https://verdant-buttercream-9ee148.netlify.app/">Deployed
                                 Link</a>.</p> -->
-                                <h2>Tech stack</h2>
-                                <div id="techstack_">
-                                    <div>
-                                        <img src="img/html.png" alt="">
-                                    </div>
-                                    <div>
-                                         <img src="img/css.png" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="img/js.png" alt="">
-                                    </div>
-                                </div>
+                        <h2>Tech stack</h2>
+                        <div id="techstack_">
+                            <div>
+                                <img src="img/html.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/css.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/js.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div id="skills">
         <h1>Skills</h1>
         <div>
@@ -365,19 +416,52 @@
                 <h2>MySQL</h2>
             </div>
         </div>
+        <h1>Tools</h1>
+            <div>
+                <div>
+                    <div>
+
+                        <img src="img/ij.png" alt="">
+                    </div>
+                    <h2>IntelliJ</h2>
+                </div>
+                <div>
+                    <div>
+
+                        <img src="img/spring.png" alt="">
+                    </div>
+                    <h2>STS</h2>
+                </div>
+                <div>
+                    <div>
+
+                        <img src="img/vscode.png" alt="">
+                    </div>
+                    <h2>VS Code</h2>
+                </div>
+                <div>
+                    <div>
+
+                        <img src="img/postman.png" alt="">
+                    </div>
+                    <h2>Postman</h2>
+                </div>
+            </div>
     </div>
     <div id="projects">
         <h1>Projects</h1>
         <div>
             <div>
                 <div>
-                    <a href="https://github.com/sumitpanchal08/null-industry-4610" target="_blank" rel="noopener noreferrer">
-                       <div>
-                        <img class="showhov" src="img/git.png" alt="">
-                        <div class="hidehov">GitHub</div>
-                    </div> 
+                    <a href="https://github.com/sumitpanchal08/null-industry-4610" target="_blank"
+                        rel="noopener noreferrer">
+                        <div>
+                            <img class="showhov" src="img/git.png" alt="">
+                            <div class="hidehov">GitHub</div>
+                        </div>
                     </a>
-                    <a href="https://drive.google.com/file/d/1q8KhutxYVVQx1cgcsgDhSI6PVVwavj2T/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/1q8KhutxYVVQx1cgcsgDhSI6PVVwavj2T/view?usp=share_link"
+                        target="_blank" rel="noopener noreferrer">
 
                         <div>
                             <img class="showhov" src="img/video.png" alt="">
@@ -390,40 +474,43 @@
                         <div class="hidehov"></div>
                     </div>
                     </a> -->
-                    
+
                 </div>
                 <div>
                     <div>
                         <img src="img/bankdb.png" alt="">
                     </div>
                     <h2>Online Banking System (Backend)</h2>
-                    <p>The objective of this project is to maintain the accounts like saving account, withdrawing, depositing money and applying loan to the user.</p>
+                    <p>The objective of this project is to maintain the accounts like saving account, withdrawing,
+                        depositing money and applying loan to the user.</p>
                     <h2>Tech stack</h2>
-                            <div id="techstack_">
-                                <div>
-                                    <img src="img/java.png" alt="">
-                                </div>
-                                <div>
-                                     <img src="img/mysql.png" alt="">
-                                </div>
-                                <!-- <div>
+                    <div id="techstack_">
+                        <div>
+                            <img src="img/java.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/mysql.png" alt="">
+                        </div>
+                        <!-- <div>
                                     <img src="img/js.png" alt="">
                                 </div> -->
-                            </div>
+                    </div>
 
-                 </div>
-                
+                </div>
+
 
             </div>
             <div>
                 <div>
-                    <a href="https://github.com/sumitpanchal08/befitting-harbor-9010" target="_blank" rel="noopener noreferrer">
-                       <div>
-                        <img class="showhov" src="img/git.png" alt="">
-                        <div class="hidehov">GitHub</div>
-                    </div> 
+                    <a href="https://github.com/sumitpanchal08/befitting-harbor-9010" target="_blank"
+                        rel="noopener noreferrer">
+                        <div>
+                            <img class="showhov" src="img/git.png" alt="">
+                            <div class="hidehov">GitHub</div>
+                        </div>
                     </a>
-                    <a href="https://www.linkedin.com/posts/sumitpanchal08_clonewebsite-advancedjavascript-activity-6969629554998960128-iuZ0?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/posts/sumitpanchal08_clonewebsite-advancedjavascript-activity-6969629554998960128-iuZ0?utm_source=share&utm_medium=member_desktop"
+                        target="_blank" rel="noopener noreferrer">
 
                         <div>
                             <img class="showhov" src="img/video.png" alt="">
@@ -432,58 +519,61 @@
                     </a>
                     <a href="https://timely-gumdrop-6783b4.netlify.app/" target="_blank" rel="noopener noreferrer">
                         <div>
-                        <img class="showhov" src="img/live.png" alt="">
-                        <div class="hidehov">Live</div>
-                    </div>
+                            <img class="showhov" src="img/live.png" alt="">
+                            <div class="hidehov">Live</div>
+                        </div>
                     </a>
-                    
+
                 </div>
                 <div>
                     <div>
                         <img src="img/rento.png" alt="">
                     </div>
                     <h2>Rentomojo Website-Clone (Frontend)</h2>
-                    <p>RentoMojo is a Ecommerce website where you rent/purchase furniture, appliances, and electronics.</p>
+                    <p>RentoMojo is a Ecommerce website where you rent/purchase furniture, appliances, and electronics.
+                    </p>
                     <h2>Tech stack</h2>
-                            <div id="techstack">
-                                <div>
-                                    <img src="img/html.png" alt="">
-                                </div>
-                                <div>
-                                     <img src="img/css.png" alt="">
-                                </div>
-                                <div>
-                                    <img src="img/js.png" alt="">
-                                </div>
-                            </div>
+                    <div id="techstack">
+                        <div>
+                            <img src="img/html.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/css.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/js.png" alt="">
+                        </div>
+                    </div>
 
-                 </div>
-                
-            
+                </div>
+
+
             </div>
-            
+
             <div>
                 <div>
-                    <a href="https://github.com/sumitpanchal08/scenic-wood-5639" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/sumitpanchal08/scenic-wood-5639" target="_blank"
+                        rel="noopener noreferrer">
                         <div>
                             <img class="showhov" src="img/git.png" alt="">
                             <div class="hidehov">GitHub</div>
                         </div>
                     </a>
-                        <a href="https://www.linkedin.com/posts/sumitpanchal08_html-css-javascript-activity-6957552163061444608-_hsR?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                            <div>
+                    <a href="https://www.linkedin.com/posts/sumitpanchal08_html-css-javascript-activity-6957552163061444608-_hsR?utm_source=share&utm_medium=member_desktop"
+                        target="_blank" rel="noopener noreferrer">
+                        <div>
                             <img class="showhov" src="img/video.png" alt="">
                             <div class="hidehov">Video</div>
                         </div>
-                        </a>
-                        <a href="https://verdant-buttercream-9ee148.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    </a>
+                    <a href="https://verdant-buttercream-9ee148.netlify.app/" target="_blank" rel="noopener noreferrer">
 
-                            <div>
-                                <img class="showhov" src="img/live.png" alt="">
-                                <div class="hidehov">Live</div>
-                            </div>
-                        </a>
-                    
+                        <div>
+                            <img class="showhov" src="img/live.png" alt="">
+                            <div class="hidehov">Live</div>
+                        </div>
+                    </a>
+
                 </div>
                 <div>
                     <div>
@@ -496,23 +586,23 @@
                             href="https://github.com/sumitpanchal08/scenic-wood-5639">GitHub</a> or on <a
                             target="_blank" href="https://verdant-buttercream-9ee148.netlify.app/">Deployed
                             Link</a>.</p> -->
-                            <h2>Tech stack</h2>
-                            <div id="techstack">
-                                <div>
-                                    <img src="img/html.png" alt="">
-                                </div>
-                                <div>
-                                     <img src="img/css.png" alt="">
-                                </div>
-                                <div>
-                                    <img src="img/js.png" alt="">
-                                </div>
-                            </div>
+                    <h2>Tech stack</h2>
+                    <div id="techstack">
+                        <div>
+                            <img src="img/html.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/css.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/js.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
     <div id="aboutMe">
         <h1>All <span>About me</span></h1>
         <ul>
@@ -540,19 +630,17 @@
         <p id="bottom">Made by Sumit Panchal &copy;2022 All rights reserved </p>
     </div>
 </body>
-<script
-            src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
-          >
-          </script>
-          
-          <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-          <!-- <link
+<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<!-- <link
             rel="stylesheet"
             href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
           /> -->
-          <script>
-              new GitHubCalendar(".calendar", "sumitpanchal08");
-          </script>
+<script>
+    new GitHubCalendar(".calendar", "sumitpanchal08");
+</script>
 <script src="index.js"></script>
 
 </html>
