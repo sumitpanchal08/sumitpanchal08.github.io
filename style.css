@@ -744,7 +744,7 @@ font-family: 'Ubuntu', sans-serif; */
         margin: auto;
     }
     #mobile_navbar {
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: center;
         position: fixed;

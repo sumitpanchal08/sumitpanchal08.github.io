@@ -142,6 +142,7 @@ function goToWhatsapp(){
 let privScrollpos = window.pageYOffset;
     window.onscroll = function () {
         let currentScrollpos = window.pageYOffset;
+        document.getElementById("mobile_navbar").style.display= "flex";
         if (currentScrollpos > privScrollpos) {
             document.getElementById("mobile_navbar").style.top = "-10px";
             document.getElementById("mobile_navbar").style.left = "-10px";
