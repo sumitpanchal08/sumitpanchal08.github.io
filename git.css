@@ -115,6 +115,30 @@
       display: block;
       color: #d15618;
   }
+  @media all and (max-width:700px) {
+    .contrib-number {
+        font-weight: 300;
+        line-height: 1.1em;
+        font-size: 16px;
+        display: block;
+        color: #d15618;
+    }
+    .calendar1 {
+        /* overflow: auto; */
+        padding: 40px 10px;
+          width: 750px;
+          font-family: 'Ubuntu', sans-serif; ;
+          /* border: 1px solid #DDDDDD; */
+          border-radius: 3px;
+          min-height: 200px;
+          text-align: center;
+          margin: 0 auto;
+          transition: transform .2s ease-in-out;
+      }
+      .Link--muted{
+        display: none;
+      }
+  }
   
   .calendar img.spinner {
       width: 70px;

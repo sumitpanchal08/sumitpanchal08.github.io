@@ -137,12 +137,16 @@ function goToWhatsapp(){
     window.open("https://wa.me/918168471581?text=Hello!%20Can%20you%20tell%20me%20more%20about%20you?");
 }
 
-
+if(screen.width>700){
+    document.getElementById("mobile_navbar").style.display= "none";
+}
 
 let privScrollpos = window.pageYOffset;
     window.onscroll = function () {
         let currentScrollpos = window.pageYOffset;
-        document.getElementById("mobile_navbar").style.display= "flex";
+        if(screen.width< 700){
+            document.getElementById("mobile_navbar").style.display= "flex";
+        }
         if (currentScrollpos > privScrollpos) {
             document.getElementById("mobile_navbar").style.top = "-10px";
             document.getElementById("mobile_navbar").style.left = "-10px";
