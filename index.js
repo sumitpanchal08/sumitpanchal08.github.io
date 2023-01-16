@@ -1,28 +1,4 @@
-// document.getElementById("sideBarOpen").addEventListener("click",function(){
-//     let topBar=document.getElementById("topBar");
-//     let sideBar=document.getElementById("sideBar");
-//     sideBar.style.display="block";
-//     topBar.style.display="none";
-//     document.getElementById("content").style.width="80vw";
-//     document.getElementById("aboutMe_").style.width="80vw";
-//     document.getElementById("skills_").style.width="80vw";
-// });
-// document.getElementById("sideBarCross").addEventListener("click",function(){
-//     let topBar=document.getElementById("topBar");
-//     let sideBar=document.getElementById("sideBar");
-//     sideBar.style.display="none";
-//     topBar.style.display="flex";
-//     // document.getElementById("content").style.display="block";
-//     // document.getElementById("aboutMe_").style.display="none";
-//     // document.getElementById("skills_").style.display="none";
-//     document.getElementById("content").style.width="100vw";
-//     document.getElementById("aboutMe_").style.width="100vw";
-//     document.getElementById("skills_").style.width="100vw";
-//     // document.getElementById("projects_").style.width="100vw";
-    
-//     // document.getElementById("projects_").style.display="none";
-    
-// });
+
 
 let mode=document.getElementById("darkmode");
 let img=document.getElementById("darkmodeimg");
